@@ -6,7 +6,8 @@ RUN apk add --update --no-cache \
     unzip \
     jq
 RUN pip install \
-    awscli
+    awscli \
+    envassume
 
 FROM resource
 ENTRYPOINT [ "aws" ]
